@@ -1,7 +1,7 @@
-import { counterReducer } from './counter/slice';
+import { coordinatesReducer } from './coordinates/slice';
 
 const rootReducer = {
-  counter: counterReducer,
+  coordinates: coordinatesReducer,
 };
 
 export default rootReducer;

@@ -12,7 +12,7 @@ const configureAppStore = (initialState = {}) => {
 
   const store = configureStore({
     reducer: rootReducer,
-    middleware: (gDM) => gDM().concat([...middleware]),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([...middleware]),
     preloadedState: initialState,
     devTools: process.env.NODE_ENV !== 'production',
   });
