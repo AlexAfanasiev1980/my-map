@@ -85,7 +85,7 @@ function Route({ routes }: { routes: IRoute[] }): JSX.Element {
 
   return (
     <Table
-      caption={'Маршруты передвижения'}
+      caption={'Таблица 1 - Список маршрутов'}
       dataSource={dataSource}
       columns={columnsTable}
       size="small"
